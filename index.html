@@ -7,17 +7,21 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Table template</h1>
-    <div>
-      <table>
-        <th>Header</th>
-        <tbody>
-          <tr>
-            <td>Cell</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <h1>Books Table</h1>
+    <div id="books"></div>
+    <div id="newBookTitle"></div>
+    <div id="newBookAuthor"></div>
+    <div id="newBookYear"></div>
+    <button id="newBookButton">Add new book</button>
+    <dialog id="dialog">
+      <form method="dialog">
+        <input id="newBookFormTitle" type="text" placeholder="Title" />
+        <input id="newBookFormAuthor" type="text" placeholder="Author" />
+        <input id="newBookFormYear" type="text" placeholder="Year" />
+        <button id="newBookFormSubmit">Submit</button>
+        <button autofocus id="newBookFormCancel">Cancel</button>
+      </form>
+    </dialog>
   </body>
   <script src="script.js"></script>
 </html>
